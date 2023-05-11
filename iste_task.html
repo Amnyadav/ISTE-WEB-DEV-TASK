@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comme:wght@100&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="iste_style.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTE form</title>
+</head>
+<body>
+    <section class="contact" id="contact">
+        <form action="iste_data.js" id="user-details">
+            <div class="alert">Registered Successfully</div>
+          <div class="user-data" data-aos="flip-left" >
+            <div class="text">Get In Touch </div>
+            <div class="user-name">
+              <input type="text"  id="first-name"  placeholder="first name"/>
+              <input type="text"  id="last-name"  placeholder="last name" />
+            </div>
+            <div class="user-info">
+                <input type="email"  id="email"  placeholder="Working Email"/>
+              <input type="number" id="contact-number" placeholder="contact Number" />
+            </div>
+            <div class="user-address">
+                <textarea  id="address" cols="30" rows="2" placeholder="Address"></textarea>
+            </div>
+            <div class="user-message">
+              <textarea  id="user-msg" cols="30" rows="5"placeholder="Type your Message here"></textarea>
+            </div>
+           
+            <div class="submit">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            <div class="thanks"><p>Thanks for submiting</p></div>
+          </div>
+          
+        </form>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="iste_data.js"></script>
+</body>
+</html>
